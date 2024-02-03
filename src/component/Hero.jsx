@@ -12,31 +12,6 @@ const shouldPlay=true;
   return (
     <section className="relative h-screen flex items-center justify-center">
       <div className="absolute top-0 left-0 w-full h-full z-0">
-      {/* <iframe
-            ref={iframeRef}
-
-  className='w-full h-full'
-  src="https://www.youtube.com/embed/BGJPgu4za6U?autoplay=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&fs=0"
-  title="Morfeus Show Reel"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-></iframe> */}
-
-
-{/* <video
-  className="w-full h-full"
-  src="https://www.youtube.com/embed/BGJPgu4za6U?autoplay=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&fs=0"
-  title="Morfeus Show Reel"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowFullScreen
-  autoPlay="autoplay"
-  controls={false}
-></video> */}
-{/* <video width={100} height={100} loop muted autoPlay="autoplay">
-  <source   src="https://www.youtube.com/embed/BGJPgu4za6U?autoplay=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&fs=0" type='video/mp4'/>
-</video> */}
 
        <React.Suspense fallback={<div>Loading...</div>}>
           <ReactPlayer

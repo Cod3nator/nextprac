@@ -1,8 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-// 'use client'
-// import React, { useState, useEffect } from 'react';
 
-// import { getImages } from '../api/team';
 
 import Image from 'next/image';
 
@@ -12,39 +8,6 @@ import { fetchImages } from '@/api/unsplash.js';
 const clientId = process.env.NEXT_PUBLIC_UNSPLASH_CLIENT_ID;
 const UNSPLASH_ROOT = 'https://api.unsplash.com';
 
-
-// const response = await fetch(`${UNSPLASH_ROOT}/photos?client_id=${clientId}&per_page=5`);
-// export async function getStaticProps() {
-//   const response = await fetch(`https://api.unsplash.com/photos?client_id=jmrA_S3kFBB4mSRnHtgRCM0Hasm7nvr7NZHD-QOZKIU&per_page=5`);
-//          const  teamMembers = await response.json();
-    
-//   return {
-//     props: {
-//       teamMembers,
-//     },
-//   };
-// }
-// export async function getStaticProps() {
-//   try {
-//     const response = await fetch(`https://api.unsplash.com/photos?client_id=jmrA_S3kFBB4mSRnHtgRCM0Hasm7nvr7NZHD-QOZKIU&per_page=5`);
-//     const teamMembers = await response.json();
-
-//     console.log('Fetched team members:', teamMembers);
-
-//     return {
-//       props: {
-//         teamMembers,
-//       },
-//     };
-//   } catch (error) {
-//     console.error('Error fetching team members:', error);
-//     return {
-//       props: {
-//         teamMembers: [],
-//       },
-//     };
-//   }
-// }
 
 
 const teamMembers=fetchImages();
@@ -84,53 +47,8 @@ const OurTeam = () => {
   );
 };
 
-// export async function getStaticProps() {
-//   try {
-//     const teamMembers = await fetchImages();
-//     console.log(teamMembers + " team members");
-//     return {
-//       props: {
-//         teamMembers,
-//       },
-//     };
-//   } catch (error) {
-//     console.error('Error fetching team members:', error);
-//     return {
-//       props: {
-//         teamMembers: [], // or handle the error accordingly
-//       },
-//     };
-//   }
-// }
 
 
 export default OurTeam;
 
 
-
-
-
-
-  // fetchImages()
-  // .then(images => {
-  //   console.log(images + " in the team comp");
-  // })
-  // .catch(error => {
-  //   console.error('Error fetching images:', error);
-  // });
-
-  // const [teamMembers, setTeamMembers] = useState([]);
-  // useEffect(() => {
-  //   const fetchTeamMembers = async () => {
-  //     try {
-  //       const response = await fetch(`${UNSPLASH_ROOT}/photos?client_id=${clientId}&per_page=4`);
-  //       const data = await response.json();
-  //       setTeamMembers(data);
-  //     } catch (error) {
-  //       console.error('Error fetching team members:', error);
-  //     }
-  //   };
-
-  //   fetchTeamMembers();
-  // }, []); 
-//  console.log(teamMembers);

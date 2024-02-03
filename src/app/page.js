@@ -8,12 +8,11 @@ import Contact from "@/component/Contact";
 import OurTeam from "@/component/OurTeam";
 import Notification from "@/component/Notification";
 import { NotificationContext } from "@/component/NotificationContext";
-// import Headers from "./component/Headers";
 
 export default function Home() {
   const { success } = useContext(NotificationContext);
    const showNoti=success.success;
-  // console.log(success.success, success.message+" context used");
+
   
   return (
 

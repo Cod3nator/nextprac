@@ -107,5 +107,3 @@ const DirectorsPanel = () => {
 
 export default DirectorsPanel
 
-// src\app\component\Headers.jsx
-// src\app\page\DirectorsPanel.jsx

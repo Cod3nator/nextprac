@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/alt-text */
+
 import React from 'react'
 import logo from '@/assets/logo.png'; 
 import Image from 'next/image';

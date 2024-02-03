@@ -6,7 +6,6 @@ import { useContext } from "react";
 
 const Contact = () => {
   
-  // const {setSuccess}=useContext(NotificationContext);
 
   function sendData(name, email, message) {
     console.log(name + " " + email + " " + message);
